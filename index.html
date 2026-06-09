@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Roteiro automatizado para entrevistas C-levels do Troféu ESG Balmoral."
+    />
+    <title>Entrevista C-Level ESG | Balmoral</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Balmoral • Troféu ESG</p>
+        <div class="hero-grid">
+          <div>
+            <h1>Entrevista automatizada para C-levels</h1>
+            <p class="hero-copy">
+              Roteiro estruturado para transformar as perguntas que Amanda já conduz nas reuniões em uma conversa executiva, objetiva e pronta para coletar evidências para o Troféu ESG.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#roteiro">Ver roteiro</a>
+              <button class="button button-secondary" type="button" data-copy-interview>
+                Copiar roteiro completo
+              </button>
+            </div>
+          </div>
+          <div class="stats-card" aria-label="Resumo do roteiro">
+            <strong data-total-questions>0</strong>
+            <span>perguntas organizadas em <span data-total-sections>0</span> blocos</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel automation-panel" aria-labelledby="automation-title">
+        <div class="section-heading">
+          <p class="eyebrow">Automação</p>
+          <h2 id="automation-title">Prepare a reunião em 30 segundos</h2>
+        </div>
+        <form class="interview-form" data-interview-form>
+          <label>
+            Executivo entrevistado
+            <input name="executive" placeholder="Ex.: CEO, CFO, CHRO..." />
+          </label>
+          <label>
+            Empresa / unidade
+            <input name="company" placeholder="Ex.: Ambev, unidade SP..." />
+          </label>
+          <label>
+            Foco da conversa
+            <select name="focus">
+              <option value="completo">Roteiro completo</option>
+              <option value="ambiental">Ambiental</option>
+              <option value="social">Social e pessoas</option>
+              <option value="governanca">Governança</option>
+              <option value="futuro">Visão de futuro</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Gerar pauta personalizada</button>
+        </form>
+        <div class="generated-agenda" data-generated-agenda aria-live="polite">
+          Preencha os campos acima para gerar uma pauta pronta para enviar ao C-level.
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Modo de uso</p>
+          <h2>Checklist rápido antes da reunião</h2>
+        </div>
+        <ol class="checklist" data-checklist></ol>
+      </section>
+
+      <section id="roteiro" class="questions-grid" aria-label="Perguntas da entrevista" data-questions></section>
+
+      <section class="closing-card">
+        <p class="eyebrow">Saída esperada</p>
+        <h2>Depois da entrevista</h2>
+        <p>
+          Consolidar respostas em: narrativa executiva, evidências quantitativas, frases de destaque, lacunas de informação e responsáveis por enviar documentos complementares.
+        </p>
+      </section>
+    </main>
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>
